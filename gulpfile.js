@@ -1,8 +1,4 @@
-// ////////////////////////////////////////////////
-//
-// EDIT CONFIG OBJECT BELOW !!!
-// 
-// jsConcatFiles => list of javascript files (in order) to concatenate
+ // jsConcatFiles => list of javascript files (in order) to concatenate
 // buildFilesFoldersRemove => list of files to remove when running final build
 // // //////////////////////////////////////////////
 
