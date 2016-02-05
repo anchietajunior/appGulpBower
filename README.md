@@ -26,14 +26,25 @@ After, in terminal run:
 
 ## Build
 
+Delete and Generate new build folder.
+
 `gulp build`
+
+Generate new build folder.
 
 `gulp build:copy`
 
-`gulp build:remove`
+Delete build folder.
 
 `gulp build:cleanfolder`
 
+Server from build folder.
+
 `gulp build:serve`
 
+## Deploy
+
+To deploy build folder. (Alter deploy task with your credencials)
+
+`gulp deploy`
 

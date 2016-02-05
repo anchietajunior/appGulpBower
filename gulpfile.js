@@ -147,9 +147,9 @@ gulp.task('build', ['build:copy', 'build:remove']);
 gulp.task( 'deploy', function () {
 
     var conn = ftp.create( {
-        host:     'estoquesistemas.com.br',
-        user:     'estoques',
-        password: '9fdba5a1',
+        host:     'host',
+        user:     'login',
+        password: 'password',
         parallel: 10,
         log:      gutil.log
     } );
