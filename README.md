@@ -1,4 +1,4 @@
-# appGulpBower
+# boilerplate-gulp-bower
 
 Setup for gulp and bower to be used in web projects.
 
@@ -47,4 +47,3 @@ Server from build folder.
 To deploy build folder. (Alter deploy task with your credencials)
 
 `gulp deploy`
-
