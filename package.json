@@ -1,5 +1,5 @@
 {
-  "name": "appWithGulp",
+  "name": "boilerplate",
   "version": "1.0.0",
   "description": "app starter",
   "main": "gulpfile.js",
