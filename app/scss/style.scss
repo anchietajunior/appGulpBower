@@ -1,12 +1,224 @@
 @import 'base';
 @import 'tipography';
 
-.container {
-	max-width: 800px;
-	height: 300px;
-	font: $font-padrao;
+/** GERAL **/
+
+body {
+	font-family: $open;
+	color: #4d4d4d;
 }
 
-h4 {
-	font-size: 18px;
+h1, h2, h3 {
+	margin: 0;
+	font-family: $roboto;
+	font-weight: 700;
+}
+
+.botao {
+	color: #f1f1f1;
+	text-decoration: none;
+	background-color: #8f3faf;
+	padding: 10px 30px;
+	font-size: .9em;
+	border-radius: 3px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #4d4d4d;
+}
+
+nav > a{
+		text-decoration: none;
+		color: #f1f1f1;
+		font-weight: bold;
+		font-size: 28px;
+		font-family: $pacifico;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li {
+	width: 100%;
+	text-align: center;
+}
+
+nav ul li a{
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+/** CABEÇALHO **/
+
+header {
+	background-image: url('../images/fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+header p {
+	margin-bottom: 2em;
+}
+
+/** SOBRE **/
+
+#sobre {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 10px 20px 20px;
+		background-color: #8f2faf;
+		color: #f1f1f1;
+}
+
+#sobre p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
+#sobre .botao {
+	background-color: #f1f1f1;
+	color: #4d4d4d;
+}
+
+/** SERVICOS **/
+
+#servicos {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#servicos div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+
+/** FOLIO **/
+
+#portfolio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+}
+
+#portfolio h2 {
+	margin-bottom: 20px;
+}
+
+#portfolio img {
+	width: 100%;
+}
+
+/** CONTATO **/
+
+#contato {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+/** RODAPÉ **/
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background: #4d4d4d;
+	color: #f1f1f1;
+}
+
+/** MEDIA QUERIES **/
+
+@media screen and (min-width: 768px) {
+	/** NAVEGACAO **/
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	nav ul {
+		flex-direction: row;
+		width: 70%;
+	}
+	/** CABECALHO **/
+	header {
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+	}
+	/** SOBRE **/
+	#sobre {
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+	/** SERVICOS **/
+	#servicos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	#servicos h2 {
+		text-align: center;
+		width: 100%;
+	}
+	#servicos div {
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+	/** FOLIO **/
+	#portfolio {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#portfolio h2 {
+		width: 100%;
+		text-align: center;
+	}
+	#portfolio img {
+		width: 33.333333333%;
+	}
+	/** CONTATO **/
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	#contato h2, #contato p {
+		width: 100%;
+		text-align: center;
+	}
 }
